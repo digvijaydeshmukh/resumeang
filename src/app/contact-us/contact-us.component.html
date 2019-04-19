@@ -1,0 +1,104 @@
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+  style="background-image: url(../../assets/img/overlay-bg.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="contact-mf">
+          <div id="contact" class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Send Message Us
+                  </h5>
+                </div>
+                <div>
+                  <form #contactform="ngForm" (ngSubmit)="save(contactform.value)" class="contactForm">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" #Name="ngModel" id="name"
+                            placeholder="Your Name" [(ngModel)]="name" required />
+                          <div class="form-control-feedback"
+                            *ngIf="Name.errors && (Name.dirty || Name.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Name.errors.required" class="alert alert-danger">Name is required</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" #Email="ngModel" id="email" placeholder="Your Email"
+                            [(ngModel)]="email" required />
+                            <div class="form-control-feedback"
+                            *ngIf="Email.errors && (Email.dirty || Email.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Email.errors.required" class="alert alert-danger">Email required</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="subject" #Subject="ngModel" id="subject" placeholder="Subject"
+                            [(ngModel)]="subject" required />
+                            <div class="form-control-feedback"
+                            *ngIf="Subject.errors && (Subject.dirty || Subject.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Subject.errors.required" class="alert alert-danger">Subject is required</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <textarea class="form-control" name="message" #Massage="ngModel" rows="5" placeholder="Message"
+                            [(ngModel)]="massage" required></textarea>
+                            <div class="form-control-feedback"
+                            *ngIf="Massage.errors && (Massage.dirty || Massage.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Massage.errors.required" class="alert alert-danger">Massage is required</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="submit" [disabled]="contactform.invalid"
+                          class="button button-a button-big button-rouded">Send Message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">
+                    Get in Touch
+                  </h5>
+                </div>
+                <div class="more-info">
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                    expedita aperiam aliquid at.
+                    Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                    mollitia inventore?
+                  </p>
+                  <ul class="list-ico">
+                    <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                    <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
+                    <li><span class="ion-email"></span> contact@example.com</li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <ul>
+                    <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                    <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                    <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                    <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</section>
