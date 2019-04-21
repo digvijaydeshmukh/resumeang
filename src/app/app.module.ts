@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { CounterComponent } from './counter/counter.component';
 import { PorfolioComponent } from './porfolio/porfolio.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component'
@@ -23,7 +22,6 @@ import {FormsModule} from '@angular/forms'
     ServicesComponent,
     CounterComponent,
     PorfolioComponent,
-    TestimonialComponent,
     BlogsComponent,
     ContactUsComponent,
     FooterComponent

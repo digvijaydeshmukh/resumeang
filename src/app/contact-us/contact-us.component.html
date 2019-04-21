@@ -1,16 +1,21 @@
-<section class="paralax-mf footer-paralax bg-image sect-mt4 route"
-  style="background-image: url(../../assets/img/overlay-bg.jpg)">
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route">
   <div class="overlay-mf"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">
+            Contact Me
+          </h3>
+          <div class="line-mf"></div>
+        </div>
         <div class="contact-mf">
           <div id="contact" class="box-shadow-full">
             <div class="row">
               <div class="col-md-6">
                 <div class="title-box-2">
                   <h5 class="title-left">
-                    Send Message Us
+                    Send Message Me
                   </h5>
                 </div>
                 <div>
@@ -20,11 +25,11 @@
                     <div class="row">
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="name" class="form-control" #Name="ngModel" id="name"
-                            placeholder="Your Name" [(ngModel)]="name" required />
-                          <div class="form-control-feedback"
-                            *ngIf="Name.errors && (Name.dirty || Name.touched)">
-                            <p style="margin-top: 7px;" *ngIf="Name.errors.required" class="alert alert-danger">Name is required</p>
+                          <input type="text" name="name" class="form-control" #Name="ngModel" id="name" placeholder="Your Name"
+                            [(ngModel)]="name" required />
+                          <div class="form-control-feedback" *ngIf="Name.errors && (Name.dirty || Name.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Name.errors.required" class="alert alert-danger">Name is
+                              required</p>
                           </div>
                         </div>
                       </div>
@@ -32,35 +37,35 @@
                         <div class="form-group">
                           <input type="email" class="form-control" name="email" #Email="ngModel" id="email" placeholder="Your Email"
                             [(ngModel)]="email" required />
-                            <div class="form-control-feedback"
-                            *ngIf="Email.errors && (Email.dirty || Email.touched)">
-                            <p style="margin-top: 7px;" *ngIf="Email.errors.required" class="alert alert-danger">Email required</p>
+                          <div class="form-control-feedback" *ngIf="Email.errors && (Email.dirty || Email.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Email.errors.required" class="alert alert-danger">Email
+                              required</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" class="form-control" name="subject" #Subject="ngModel" id="subject" placeholder="Subject"
-                            [(ngModel)]="subject" required />
-                            <div class="form-control-feedback"
-                            *ngIf="Subject.errors && (Subject.dirty || Subject.touched)">
-                            <p style="margin-top: 7px;" *ngIf="Subject.errors.required" class="alert alert-danger">Subject is required</p>
+                          <input type="text" class="form-control" name="subject" #Subject="ngModel" id="subject"
+                            placeholder="Subject" [(ngModel)]="subject" required />
+                          <div class="form-control-feedback" *ngIf="Subject.errors && (Subject.dirty || Subject.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Subject.errors.required" class="alert alert-danger">Subject
+                              is required</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <textarea class="form-control" name="message" #Massage="ngModel" rows="5" placeholder="Message"
-                            [(ngModel)]="massage" required></textarea>
-                            <div class="form-control-feedback"
-                            *ngIf="Massage.errors && (Massage.dirty || Massage.touched)">
-                            <p style="margin-top: 7px;" *ngIf="Massage.errors.required" class="alert alert-danger">Massage is required</p>
+                          <textarea class="form-control" name="message" #Message="ngModel" rows="5" placeholder="Message"
+                            [(ngModel)]="message" required></textarea>
+                          <div class="form-control-feedback" *ngIf="Message.errors && (Message.dirty || Message.touched)">
+                            <p style="margin-top: 7px;" *ngIf="Message.errors.required" class="alert alert-danger">Message
+                              is required</p>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <button type="submit" [disabled]="contactform.invalid"
-                          class="button button-a button-big button-rouded">Send Message</button>
+                        <button type="submit" [disabled]="contactform.invalid" class="button button-a button-big button-rouded">Send
+                          Message</button>
                       </div>
                     </div>
                   </form>
@@ -73,24 +78,17 @@
                   </h5>
                 </div>
                 <div class="more-info">
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                    expedita aperiam aliquid at.
-                    Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                    mollitia inventore?
-                  </p>
                   <ul class="list-ico">
-                    <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                    <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                    <li><span class="ion-email"></span> contact@example.com</li>
+                    <li><span class="ion-ios-location"></span> House No 1,Rajyog society,Baner,pune</li>
+                    <li><span class="ion-ios-telephone"></span> +91 9970713433</li>
+                    <li><span class="ion-ios-telephone"></span> +91 7972597400</li>
+                    <li><span class="ion-email"></span> digvijay.deshmukh@gmail.com</li>
                   </ul>
                 </div>
                 <div class="socials">
                   <ul>
-                    <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                    <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                    <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                    <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                    <li><a href="https://www.facebook.com/digvijay.deshmukh.94"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                    <li><a href="https://www.instagram.com/digvijay.deshmukh19/"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
                   </ul>
                 </div>
               </div>
